@@ -1,6 +1,6 @@
 ## Walkthrough Steps
 
-### Azure workload is necessary for this walkthrough.
+Note: Azure workload is necessary for this walkthrough.
 
 1.File > New > Project > C#/VB > .NET Core> Console App(.NET Core).
 
@@ -12,7 +12,7 @@
 
 ![Publish template](_images/PublishconsoleappasWebJobs/publish.PNG)
 
-4.Check the webjob in Server Explorer, your console app is under On Demand& Scheduled folder.
+4.Check the webJobs in Server Explorer, your console app is under On Demand& Scheduled folder.
 
 ![check in serverexploer](_images/PublishconsoleappasWebJobs/serverexplorer_Demand.PNG)
 
@@ -20,16 +20,16 @@
 
 ![Settingsjobfile](_images/PublishconsoleappasWebJobs/publish_settingsjobfile.PNG)
 
-6.uncomment a schedule and publish the console app again
+6.Uncomment a schedule and publish the console app again
 
 ![uncommon a schedule](_images/PublishconsoleappasWebJobs/uncommon.PNG)
 
-7.Navigate to http://yourwebjobsapp.scm.azurewebsites.net/  >Tools>WebJob Dashboard
+7.Navigate to http://yourwebjobsapp.[**scm**].azurewebsites.net/  >Tools>WebJob Dashboard.
 Open your console app  to check the frequency of webJob.
 
 ![publish with scm](_images/PublishconsoleappasWebJobs/scm.PNG)
 
-8.Change a triggered webjob to continuous, you can update the pubxml property in the pubxml. In 15.4 prev3, there will be a settings dialog where you will be able to change this.
+8.Change a triggered webjob to continuous, you can update the pubxml property in the pubxml. (Note: In 15.4 prev3, there will be a settings dialog where you will be able to change this.)
 
 ```
 <WebJobType>Continuous</WebJobType>
